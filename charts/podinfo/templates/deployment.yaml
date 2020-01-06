@@ -18,6 +18,7 @@ spec:
       labels:
         app: {{ template "podinfo.name" . }}
         release: {{ .Release.Name }}
+        foo: bah
       annotations:
         prometheus.io/scrape: 'true'
     spec:
